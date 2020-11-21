@@ -41,10 +41,10 @@ public class CalenderObserver extends JFrame implements Observer{
     {
         Border blackline = BorderFactory.createLineBorder(Color.black);
         Border redLine = BorderFactory.createLineBorder(Color.red);
-        eventPanel.setPreferredSize(new Dimension(300, 100));
+        eventPanel.setPreferredSize(new Dimension(400, 100));
         eventPanel.setBorder(redLine);
         cPanel = new CalenderPanel(dates, eventPanel);
-        cPanel.setPreferredSize(new Dimension(300, 100));
+        cPanel.setPreferredSize(new Dimension(400, 100));
         cPanel.setBorder(blackline);
         JPanel labelsPanel = new JPanel();
         labelsPanel.add(new JLabel(dates.get(0)));
@@ -56,7 +56,7 @@ public class CalenderObserver extends JFrame implements Observer{
 
         add(eventPanel, BorderLayout.LINE_END);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setSize(700,500);
+        setSize(1000,600);
         setVisible(true);
     }
 

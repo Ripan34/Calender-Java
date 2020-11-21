@@ -67,7 +67,7 @@ public class CalenderPanel extends JPanel{
             JLabel label = new JLabel(c);
             if(nowDate.toLocalDate().getDayOfMonth() == Integer.parseInt(c))
                 label.setForeground(Color.red);
-            label.addMouseListener(new DateListener(month, label.getText(), eventPanel));
+            label.addMouseListener(new DateListener(month, label.getText(), eventPanel, label));
             add(label);
         }
     }
